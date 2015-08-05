@@ -1,0 +1,79 @@
+/* header */
+header p img {
+  border-radius: 50%;
+  height: 150px;
+  margin-top: 25px;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  border: 5px solid #BFBB6D;
+}
+
+header p img:hover {
+  border: 5px solid #E6E4B5;
+}
+
+header .social a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(img/glyphicons_social.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-indent: -5000em;
+  opacity: 0.3;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+header .social:hover a {
+  opacity: 0.6;
+}
+
+header .social:hover a:hover {
+  opacity: 0.9;
+}
+
+header .social a.linkedin { background-position: -336px -48px; }
+header .social a.github { background-position: -48px -96px; }
+header .social a.facebook { background-position: 0px -144px; }
+header .social a.spotify { background-position: -336px -96px; }
+header .social a.instagram { background-position: -96px -144px; }
+
+/* section */
+section .content .period {
+  font-weight: 100;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+section .content .role,
+section .content .company {
+  margin-bottom: 0;
+}
+
+section .content .company,
+section .content .period {
+  margin-top: 0;
+}
+
+section .tags li {
+  list-style: none;
+  display: inline-block;
+  background-color: rgba(230, 228, 181, 0.5);
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  padding: 7px;
+  font-size: 0.9em;
+  margin: 3px;
+}
+
+section .tags li:hover {
+  background-color: rgba(230, 228, 181, 1);
+}
