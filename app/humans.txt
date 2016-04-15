@@ -1,0 +1,14 @@
+/* TEAM */
+	Developer: Eugenio Grigolon
+	Contact: egrigolon [at] gmail.com
+
+/* THANKS */
+
+	Illustrator &amp; Girlfriend: Fer Yukari
+	Contact: fer.yukari@gmail.com
+
+/* SITE */
+	Last update: 2016/04/13
+	Language: Brazilian Portuguese
+	Doctype: HTML5
+	IDE: Atom

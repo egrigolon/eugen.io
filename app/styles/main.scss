@@ -1,0 +1,107 @@
+// bower:scss
+// endbower
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,300,700,600,500);
+
+@import 'variables';
+@import 'mixin.scss';
+
+* {
+  box-sizing: border-box;
+
+  &:before, &:after {
+    box-sizing: border-box;
+  }
+}
+
+html, body {
+  @include square(100%);
+  background-color: $color-background;
+  font-family: $font-family;
+}
+
+main {
+  width: 100%;
+}
+
+.content {
+  width: $size-content-width;
+  @include center();
+}
+
+header {
+  background-color: $color-header;
+  color: $color-white;
+  height: $header-height;
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    p, ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    p {
+      font-weight: 100;
+      font-size: 22px;
+      line-height: $header-height;
+      order: 1;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 5px;
+      order: 2;
+      display: flex;
+
+      li {
+        margin-right: 20px;
+
+        a {
+          @include square(30px);
+          display: block;
+          border: 1px solid $color-white;
+          border-radius: 50%;
+
+          &:hover {
+            border-width: 2px;
+          }
+
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cover {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  &:before {
+    content: ' ';
+    background: url(../images/cover.png) center no-repeat;
+    background-size: cover;
+    filter: blur(24px);
+    transform: scale(1.3);
+    width: 100%;
+    height: 385px;
+    display: block;
+  }
+
+  .content-wrapper {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
