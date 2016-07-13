@@ -4,3 +4,6 @@ bower_components
 .DS_Store
 _site
 .sass-cache
+tmp
+.tmp
+dist
